@@ -1,0 +1,5 @@
+payment_method,order_count
+Card,3
+Cash on Delivery,2
+Net Banking,2
+UPI,5

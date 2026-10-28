@@ -1,0 +1,48 @@
+MySQL connection/data read unavailable; using built-in sample data.
+To use MySQL, run schema.sql and configure MYSQL_HOST, MYSQL_USER,
+MYSQL_PASSWORD, and MYSQL_DATABASE. Details: No module named 'mysql'
+
+=== ONLINE SHOPPING TRANSACTION ANALYSIS ===
+Total orders recorded: 12
+Orders included in realized value/AOV: 10
+Realized transaction value (INR): ₹12,472.00
+Average order value (INR): ₹1,247.20
+Median eligible order value (INR): ₹1,246.50
+Standard deviation (INR): ₹516.16
+
+Order status report:
+order_status
+Delivered     7
+Shipped       2
+Cancelled     1
+Refunded      1
+Processing    1
+
+Payment method report:
+  payment_method  order_count
+            Card            3
+Cash on Delivery            2
+     Net Banking            2
+             UPI            5
+
+Product units sold:
+  product_name  units_sold
+ Notebook Pack          12
+  Water Bottle           6
+Wireless Mouse           5
+  USB Keyboard           4
+      Backpack           3
+
+Reports and charts saved in: /mnt/data/online_shopping_transaction_analysis/output
+Note: Cancelled and Refunded orders are shown in reports but excluded from realized value/AOV.
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.

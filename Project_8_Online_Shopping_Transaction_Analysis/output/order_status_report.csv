@@ -1,0 +1,6 @@
+order_status,order_count,order_value
+Cancelled,1,1299.0
+Delivered,7,9079.0
+Processing,1,598.0
+Refunded,1,899.0
+Shipped,2,2795.0
